@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="700" Width="500">
     <Grid>
+        <Label Content="Label" HorizontalAlignment="Center" Margin="10,30,10,10" VerticalAlignment="Top" Height="100" Width="460" BorderThickness="3" BorderBrush="DodgerBlue"/>
+        <Border Background="GhostWhite" BorderBrush="DodgerBlue" BorderThickness="2" Margin="2,166,2,2" >
+            <Grid>
+                <Button Content="Clear" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="\" HorizontalAlignment="Left" Margin="130,20,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
+                <Button Content="X" HorizontalAlignment="Left" Margin="250,20,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="back" HorizontalAlignment="Left" Margin="370,20,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="7" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="8" HorizontalAlignment="Left" Margin="130,110,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
+                <Button Content="9" HorizontalAlignment="Left" Margin="250,110,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="-" HorizontalAlignment="Left" Margin="370,110,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="4" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="5" HorizontalAlignment="Left" Margin="130,210,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
+                <Button Content="6" HorizontalAlignment="Left" Margin="250,210,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="+" HorizontalAlignment="Left" Margin="370,210,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="1" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="2" HorizontalAlignment="Left" Margin="130,310,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
+                <Button Content="3" HorizontalAlignment="Left" Margin="250,310,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="()" HorizontalAlignment="Left" Margin="370,310,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="0" HorizontalAlignment="Left" Margin="10,410,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="." HorizontalAlignment="Left" Margin="130,410,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
+                <Button Content="+/-" HorizontalAlignment="Left" Margin="250,410,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button Content="=" HorizontalAlignment="Left" Margin="370,410,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+            </Grid>
+
+        </Border>
 
     </Grid>
 </Window>
