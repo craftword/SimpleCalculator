@@ -5,31 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="500">
+        Title="Simple Calculator" Height="600" Width="410">
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Center" Margin="10,30,10,10" VerticalAlignment="Top" Height="100" Width="460" BorderThickness="3" BorderBrush="DodgerBlue"/>
+        <Label x:Name="lblDisplay" Content="" HorizontalAlignment="Center" Margin="10,30,10,10" VerticalAlignment="Top" Height="100" Width="360" BorderThickness="3" BorderBrush="DodgerBlue" FontFamily="SimSun" FontSize="18"/>
         <Border Background="GhostWhite" BorderBrush="DodgerBlue" BorderThickness="2" Margin="2,166,2,2" >
             <Grid>
-                <Button Content="Clear" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="\" HorizontalAlignment="Left" Margin="130,20,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
-                <Button Content="X" HorizontalAlignment="Left" Margin="250,20,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="back" HorizontalAlignment="Left" Margin="370,20,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="7" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="8" HorizontalAlignment="Left" Margin="130,110,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
-                <Button Content="9" HorizontalAlignment="Left" Margin="250,110,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="-" HorizontalAlignment="Left" Margin="370,110,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="4" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="5" HorizontalAlignment="Left" Margin="130,210,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
-                <Button Content="6" HorizontalAlignment="Left" Margin="250,210,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="+" HorizontalAlignment="Left" Margin="370,210,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="1" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="2" HorizontalAlignment="Left" Margin="130,310,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
-                <Button Content="3" HorizontalAlignment="Left" Margin="250,310,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="()" HorizontalAlignment="Left" Margin="370,310,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="0" HorizontalAlignment="Left" Margin="10,410,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="." HorizontalAlignment="Left" Margin="130,410,0,0" VerticalAlignment="Top" Height="60" Width="100" RenderTransformOrigin="0.526,0.531"/>
-                <Button Content="+/-" HorizontalAlignment="Left" Margin="250,410,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
-                <Button Content="=" HorizontalAlignment="Left" Margin="370,410,0,0" VerticalAlignment="Top" Height="60" Width="100"/>
+                <Button x:Name="btnClr" Content="Clear" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="50" Width="80" BorderBrush="#FF152597" FontFamily="Arial" FontSize="18"/>
+                <Button x:Name="btnDivision" Content="\" HorizontalAlignment="Left" Margin="105,20,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" FontWeight="Bold" BorderBrush="#FF1827C5" />
+                <Button x:Name="btnMultiply" Content="X" HorizontalAlignment="Left" Margin="205,20,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1827C5"/>
+                <Button x:Name="btnBack" Content="back" HorizontalAlignment="Left" Margin="300,20,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1827C5"/>
+                <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Height="50" Width="80" Background="#FFDDDDDD" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB"/>
+                <Button x:Name="btnEight" Content="8" HorizontalAlignment="Left" Margin="105,90,0,0" VerticalAlignment="Top" Height="50" Width="80" BorderBrush="#FF1F5FCB" FontFamily="Arial" FontSize="18" />
+                <Button x:Name="btnNine" Content="9" HorizontalAlignment="Left" Margin="205,90,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB"/>
+                <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="300,90,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB"/>
+                <Button x:Name="btnFour" Content="4" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB"/>
+                <Button x:Name="btnFive" Content="5" HorizontalAlignment="Left" Margin="105,160,0,0" VerticalAlignment="Top" Height="50" Width="80" BorderBrush="#FF1F5FCB" FontFamily="Arial" FontSize="18" />
+                <Button x:Name="btnSix" Content="6" HorizontalAlignment="Left" Margin="205,160,0,0" VerticalAlignment="Top" Height="50" Width="80" BorderBrush="#FF1F5FCB" FontFamily="Arial" FontSize="18"/>
+                <Button x:Name="btnPlus" Content="+" HorizontalAlignment="Left" Margin="300,160,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB"/>
+                <Button x:Name="btnOne" Content="1" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Height="50" Width="80" BorderBrush="#FF1F5FCB" FontFamily="Arial" FontSize="18"/>
+                <Button x:Name="btnTwo" Content="2" HorizontalAlignment="Left" Margin="105,230,0,0" VerticalAlignment="Top" Height="50" Width="80" BorderBrush="#FF1F5FCB" FontFamily="Arial" FontSize="18" />
+                <Button x:Name="btnThree" Content="3" HorizontalAlignment="Left" Margin="205,230,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB"/>
+                <Button x:Name="btnBracket" Content="()" HorizontalAlignment="Left" Margin="300,230,0,0" VerticalAlignment="Top" Height="50" Width="80" BorderBrush="#FF1F5FCB" FontFamily="Arial" FontSize="18"/>
+                <Button x:Name="btnZero" Content="0" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB"/>
+                <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="105,300,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB" />
+                <Button x:Name="btnPlusMinus" Content="+/-" HorizontalAlignment="Left" Margin="205,300,0,0" VerticalAlignment="Top" Height="50" Width="80" BorderBrush="#FF1F5FCB" FontFamily="Arial" FontSize="18"/>
+                <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="300,300,0,0" VerticalAlignment="Top" Height="50" Width="80" FontFamily="Arial" FontSize="18" BorderBrush="#FF1F5FCB"/>
+                
             </Grid>
 
         </Border>
