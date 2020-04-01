@@ -69,5 +69,38 @@ namespace SimpleCalculator
                 }
             }
         }
+
+        private void btnPlusMinus_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtDisplay.Text != "0")
+            {
+                if (!txtDisplay.Text.Contains("-"))
+                    txtDisplay.Text = "-" + txtDisplay.Text;
+            }
+        }
+
+        private void btnEqual_Click(object sender, RoutedEventArgs e)
+        {
+            num2 = decimal.Parse(txtDisplay.Text);
+            //////////////////////////////// 
+            switch (Operator)
+            {
+                case "+":
+                    txtDisplay.Text = (num1 + num2).ToString();
+                    break;
+                case "-":
+                    txtDisplay.Text = (num1 - num2).ToString();
+                    break;
+                case "*":
+                    txtDisplay.Text = (num1 * num2).ToString();
+                    break;
+                case "/":
+                    txtDisplay.Text = (num1 / num2).ToString();
+                    break;                
+                case "%":
+                    txtDisplay.Text = (num1 % num2).ToString();
+                    break;
+            }
+        }
     }
 }
