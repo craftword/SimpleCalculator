@@ -158,5 +158,7 @@ namespace SimpleCalculator
             }
             return result;
         }
+
+        
     }
 }
